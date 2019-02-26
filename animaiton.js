@@ -8,9 +8,9 @@ var path = svg.append("g")
     .attr("fill", "none")
     .attr("stroke-width", 10)
     .attr("stroke-linejoin", "round")
-  .selectAll("path")
-  .data(["cyan", "magenta", "yellow"])
-  .enter().append("path")
+    .selectAll("path")
+    .data(["cyan", "magenta", "yellow"])
+    .enter().append("path")
     .attr("stroke", function(d) { return d; })
     .style("mix-blend-mode", "darken")
     .datum(function(d, i) {
@@ -22,9 +22,22 @@ var path = svg.append("g")
             return 200 + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) * Math.pow((1 + Math.cos(a - t)) / 2, 3) * 32;
           });
     });
+function Repeat(){
+  var name=svg.append('text').attr('x',560).attr('y',320)
+      .style('fill','yellow ').style('font-size','72px').style('font-family','ubuntu')
+      .style('font-weight','bold').text('Rollens');
+  repeat();
+  function repeat(){
+  name.transition().delay(500).duration(3000).style('fill','magenta')
+  .transition().delay(500).duration(3000).style('fill','cyan')
+  .transition().delay(500).duration(3000).style('fill','yellow').on('end',repeat);};
+};
+
+Repeat();
 
 d3.timer(function() {
   path.attr("d", function(d) {
     return d(angles);
   });
 });
+
