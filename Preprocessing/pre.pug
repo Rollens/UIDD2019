@@ -1,0 +1,16 @@
+doctype html
+html(lang="zh-Hant-TW")
+    head
+        title landing page
+        link(rel="stylesheet", href="pre.css")
+        script(src="https://d3js.org/d3.v5.min.js")
+    body
+        header
+            h3.title Landing<br>Page
+            each val in ["Work","Company","Blog","About"]
+                .mu= val
+        .ui.container
+            .right this is right
+            .left this is left
+        footer.ui.footer this is footer
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js")

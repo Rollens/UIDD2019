@@ -1,0 +1,32 @@
+{
+  "name": "uidd2019",
+  "version": "1.0.0",
+  "description": "doing homework",
+  "main": "animaiton.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.2",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.17.2",
+    "vue": "^2.6.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rollens/UIDD2019.git"
+  },
+  "keywords": [
+    "uidd2019"
+  ],
+  "author": "Rollens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rollens/UIDD2019/issues"
+  },
+  "homepage": "https://github.com/Rollens/UIDD2019#readme"
+}
