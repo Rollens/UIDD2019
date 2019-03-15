@@ -4,13 +4,21 @@ html(lang="zh-Hant-TW")
         title landing page
         link(rel="stylesheet", href="pre.css")
         script(src="https://d3js.org/d3.v5.min.js")
+        script(src="./node_modules/jquery/dist/jquery.min.js")
     body
         header
             h3.title Landing<br>Page
-            each val in ["Work","Company","Blog","About"]
-                .mu= val
-        .ui.container
-            .right this is right
-            .left this is left
+            .menu
+                each val in ["Work","Company","Blog","About"]
+                    .mu=val
+        .container
+            .left
+                img(src="", alt="")
+            .right
+                .titlebox
+                    p.title Landing   Page<br>Design
+                .indexbox
+                    p.index Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quas consequatur quis ratione eos reprehenderit esse sit doloribus quae quaerat ab optio suscipit, sint mollitia atque nobis. Aperiam, culpa eum.
+                .LM Learn More
         footer.ui.footer this is footer
         script(src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js")
